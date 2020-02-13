@@ -1,12 +1,13 @@
 katrina.vue
 <template>
-  <p>{{question}} Hello, </p>
+  <span>{{ question }}</span>
+</template>
 
 <script>
-    module.exports = {
-data.funtion () {
-    return {
-    question: 'how many years old are you?' 
+    export default
+      data () {
+        return {
+          question: 'how many years old are you?' 
     }
   }
 }
