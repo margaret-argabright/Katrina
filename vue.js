@@ -1,14 +1,21 @@
 katrina.vue
 <template>
-  <span>{{ question }}</span>
+  <span>{{ message }}</span>
 </template>
 
 <script>
     export default
       data () {
         return {
-          question: 'how many years old are you?' 
+          message: 'how many years old are you?'
     }
   }
 }
 </script> 
+<style scoped>
+  p {
+    font-size: 2em;
+    text-align: center;
+  }
+</style>
+
