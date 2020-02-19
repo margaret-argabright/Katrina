@@ -1,4 +1,3 @@
-katrina.vue
 <form 
 id="app"
 @submit="checkForm"
