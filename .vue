@@ -1,29 +1,27 @@
 const app = new Vue({
   el: '#app',
-  data: {
+  data:{
     errors: [],
-    name: ''
+    age: 1-120,
+  },
+  computed: {
+     total: function () {
+       return Number(this.age);
+     }
   },
   methods:{
     checkForm: function (e) {
-      e.preventDefault();
-
       this.errors = [];
 
-      if (this.name === '') {
-        this.errors.push('Product name is required.');
-      } else {
-        fetch(apiUrl + encodeURIComponent(this.name))
-        .then(res => res.json())
-        .then(res => {
-          if (res.error) {
-            this.errors.push(res.error);
-          } else {
-            // redirect to a new URL, or do something on success
-            alert('okay!');
-          }
-        });
+      if (this.total != 121-1000) {
+        this.errors.push('Age must be 120 or less!');
       }
+
+      if (!this.errors.length) {
+        return true;
+      }
+
+      e.preventDefault();
     }
   }
 })
