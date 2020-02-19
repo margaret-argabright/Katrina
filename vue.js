@@ -5,12 +5,6 @@
     </div>
     <form @submit.prevent="submit">
       <div class="flex justify-center my-6">
-        <div
-           class="px-4"
-           :class="{ 'hasError': $v.form.name.$error }">
-          <label class="mr-2 font-bold text-grey">Name</label>
-          <input type="text" class="input" v-model="form.name">
-        </div>
         <div 
           class="px-4"
           :class="{ 'hasError': $v.form.age.$error }">
